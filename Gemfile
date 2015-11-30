@@ -1,4 +1,4 @@
-source 'https://rubygems.org'
+source 'http://rubygems.org'
 
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
@@ -9,8 +9,12 @@ gem 'thin'
 
 # Use Uglifier as compressor for JavaScript assets
 
-  gem 'sass-rails'
+  gem 'sass-rails', '5.0.1'
   gem 'coffee-rails'
+  gem 'eco'
+  #gem 'compass-rails'
+  gem 'compass-rails', github: 'Compass/compass-rails', branch: '2-0-stable'
+	gem 'bootstrap-sass-rails'
 
   # See https://github.com/sstephenson/execjs#readme for more supported runtimes
   # gem 'therubyracer', :platforms => :ruby
