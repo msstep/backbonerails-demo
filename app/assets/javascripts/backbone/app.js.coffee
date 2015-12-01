@@ -12,8 +12,10 @@
 		#console.log "1111"	
     
     #console.log "22222"	    
-    #App.module("HeaderApp").start()	
+    
+		App.module("HeaderApp").start()	    
 		App.module("FooterApp").start()
+
     
  
 	

@@ -8,13 +8,20 @@ gem 'sqlite3'
 gem 'thin'
 
 # Use Uglifier as compressor for JavaScript assets
-
-  gem 'sass-rails', '5.0.1'
+#group :assets do
+  #gem 'sass-rails', '5.0.1'
   gem 'coffee-rails'
   gem 'eco'
   #gem 'compass-rails'
   gem 'compass-rails', github: 'Compass/compass-rails', branch: '2-0-stable'
-	gem 'bootstrap-sass-rails'
+	#gem 'bootstrap-sass-rails'
+	gem 'bootstrap-sass', '2.3.2.0'
+  gem 'bootstrap-will_paginate', '0.0.9'
+  gem 'sass-rails', '~> 4.0.3'
+	#gem 'bootstrap-will_paginate', '0.0.9'
+  #gem 'bootstrap-sass', '~> 3.3.6'
+  #gem 'sass-rails', '>= 3.2'
+#end
 
   # See https://github.com/sstephenson/execjs#readme for more supported runtimes
   # gem 'therubyracer', :platforms => :ruby

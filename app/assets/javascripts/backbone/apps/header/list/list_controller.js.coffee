@@ -4,13 +4,13 @@
 		
 		listHeader: ->
 			console.log "list header controller 1"
-			headerView = @getHeaderView
+			headerView = @getHeaderView()
 			if headerView
-			  console.log "list header controller 2"
+			  console.log headerView
 			else  
 				console.log "list header controller -2"
 			App.headerRegion.show headerView
-			
+			#console.log "list header controller 3"
 		  
 
 		getHeaderView: -> 
