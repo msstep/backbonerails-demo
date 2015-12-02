@@ -5,5 +5,8 @@ class ApplicationController < ActionController::Base
   
 
   def index
+  	@users = User.all
+  	#gon.users = @users
+  	gon.rabl "app/views/users/index.json.rabl", as: "users"
   end
 end

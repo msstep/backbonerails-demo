@@ -2,12 +2,10 @@
 	
 	Show.Controller =
 		
-		showFooter: ->		
-      #console.log "Show.Controller 1"
-			footerView = @getFooterView()	
-			console.log footerView 		
+		showFooter: ->
+			console.log gon
+			footerView = @getFooterView()
 			App.footerRegion.show footerView
-      #console.log "Show.Controller 3"
 		
 		getFooterView: ->
 			new Show.Footer
