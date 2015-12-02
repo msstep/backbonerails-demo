@@ -1,3 +1,4 @@
+<% console.log "00000000000000000  33" %>
 <div id="header" class="navbar">
 	<div class="navbar-inner">
 		<div class="container">
