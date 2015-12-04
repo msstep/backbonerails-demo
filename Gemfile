@@ -9,6 +9,7 @@ gem 'thin'
 gem 'rabl'
 gem 'oj'
 gem 'gon'
+gem 'js-routes'
 
 # Use Uglifier as compressor for JavaScript assets
 #group :assets do

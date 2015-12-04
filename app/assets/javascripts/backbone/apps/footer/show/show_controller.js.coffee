@@ -2,10 +2,13 @@
 	
 	Show.Controller =
 		
-		showFooter: ->
-			console.log gon
-			footerView = @getFooterView()
+		showFooter: ->		  
+			console.log "111"
+			cu = App.currentUser
+			footerView = @getFooterView cu#App.currentUser#currentUser
+
 			App.footerRegion.show footerView
 		
-		getFooterView: ->
-			new Show.Footer
+		getFooterView: (currentUser) ->
+			new Show.Footer  
+			  model: currentUser 
