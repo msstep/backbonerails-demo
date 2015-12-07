@@ -4,23 +4,24 @@
 	
 	class Entities.UsersCollection extends Entities.Collection
 		model: Entities.User
-		#url: "users"		before gem js-routes 
-		url: -> Routes.users_path()		#before gem js-routes
+		#url: "users"		before gem js -routes 
+		url: -> Routes.users_path()		
 	 
 	API =
 		setCurrentUser: (currentUser) ->
 			new Entities.User currentUser		
 
-		getUserEntities: ->
+		getUserEntities: (cb) ->	
 			users = new Entities.UsersCollection		
-			users.fetch()
-			users
+			users.fetch
+				success: ->
+					cb users
+		
 	
 	App.reqres.setHandler "set:current:user", (currentUser) ->
-		console.log "1"
 		console.log currentUser
 		API.setCurrentUser currentUser
 	
 	
-	App.reqres.setHandler "user:entities", ->		
-		API.getUserEntities()
+	App.reqres.setHandler "user:entities", (cb) ->	
+		API.getUserEntities cb
